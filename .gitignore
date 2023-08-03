@@ -1,0 +1,12 @@
+"__pycache__/" 
+"*.pyc" 
+
+README.md
+
+# module files
+big-front/node_modules/
+
+# secret key
+big-front/.env
+big-front/google-services.json
+big-front/eas.json

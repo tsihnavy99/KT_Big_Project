@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1024666934220",
+    "project_id": "chatproject-6dbe6",
+    "storage_bucket": "chatproject-6dbe6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024666934220:android:e573951c00ed8ffd9ddb69",
+        "android_client_info": {
+          "package_name": "com.fastcampus.rn.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024666934220-slbue8o6m71l0kfl8mlt32f8kma5l49v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHkbhkf99BbhtO_ijiPyjlxt-0cRpKkJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024666934220-5u5tq6lp30p0pt8auq5nl23lpnqehr7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

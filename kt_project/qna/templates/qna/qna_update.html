@@ -1,0 +1,21 @@
+<h1>새로운 질문을 작성해주세요 </h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+
+    <div><input type="text" name="user_info" value="asd"></div>
+    <br>
+    질문을 입력하세요<br>
+    <div><input type="text" name="question" maxlength="100"></div>
+    <br>
+    사진을 업로드하세요<br>
+    <div><input name="photo" type="file"></div>
+
+    <br><br>
+
+    <div><input type="submit" value="저장"></div>
+</form>
+
+<hr>
+<a href="{% url 'qna:home' %}">Q&A로 돌아가기</a>

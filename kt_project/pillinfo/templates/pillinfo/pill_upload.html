@@ -1,0 +1,57 @@
+<h1>알약 사진 업로드</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="pill_image">
+    <button type="submit">업로드</button>
+</form>
+
+{% if error_message %}
+    <p class="error">{{ error_message }}</p>
+{% endif %}
+
+{% if results %}
+    <h2>Detected Pills:</h2>
+    <ul>
+    {% for name in results %}
+        <li>{{ name }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+{% if interaction_issues %}
+    <h2>Interaction Issues:</h2>
+    <ul>
+    {% for issue in interaction_issues %}
+        <li>
+            <p>Medication: {{ issue.medication }}</p>
+            <p>Current Medication: {{ issue.current_medication }}</p>
+            <p>Reason: {{ issue.reason }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}
+<<<<<<< HEAD
+=======
+
+>>>>>>> e8b626112dba1cce044e3e215f7e2c0949c59d52
+=======
+>>>>>>> main
+
+{% if restriction_issues %}
+    <h2>Restriction Issues:</h2>
+    <ul>
+    {% for issue in restriction_issues %}
+        <li>
+            <h3>Type: {{ issue.type }}</h3>  <!-- 문제 유형 출력 -->
+            <p>Medication: {{ issue.medication }}</p>  <!-- 문제가 되는 약물 출력 -->
+            <p>Reason: {{ issue.reason }}</p>  <!-- 문제 이유 출력 -->
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}
+

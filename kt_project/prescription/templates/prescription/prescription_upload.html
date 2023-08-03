@@ -1,0 +1,20 @@
+<h1>처방전 사진 업로드</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="prescription_img">
+    <button type="submit">업로드</button>
+</form>
+
+
+{% if results %}
+    <h2>Detected Pills:</h2>
+    <ul>
+        {% for name in results %}
+            <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Uploaded Image:</h2>
+    <img src="{{ uploaded_file_url }}" alt="Uploaded Image">
+{% endif %}

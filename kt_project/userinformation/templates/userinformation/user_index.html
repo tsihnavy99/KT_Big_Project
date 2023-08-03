@@ -1,0 +1,26 @@
+<h2>집가고싶어요~</h2>
+
+
+<h3>제발</h3>
+<ul>
+    {% for u in info %}
+    <li> {{ u.id }} 를 가진 사람의 이름은 {{ u.name }}</li>
+    <a href='/user/detail/{{u.id}}/'>눌러보세요</a>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'user:join' %}">회원가입 하러 가기</a>
+
+<a href="{% url 'user:login' %}">로그인하러 가기</a>
+
+<hr>
+<hr><hr>
+
+너의 이름은?
+
+
+{% if user.is_authenticated %}
+    <p>현재 로그인한 사용자: {{ request.session.user }}</p>
+{% else %}
+    <p>로그인되지 않은 상태입니다.</p>
+{% endif %}

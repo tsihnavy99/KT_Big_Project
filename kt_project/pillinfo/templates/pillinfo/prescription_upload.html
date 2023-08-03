@@ -1,0 +1,7 @@
+<h1>처방전 사진 업로드</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="prescription_image">
+    <button type="submit">업로드</button>
+</form>

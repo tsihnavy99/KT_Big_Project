@@ -1,0 +1,14 @@
+<h1>선택</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    <a href="{% url 'pillinfo:prescription_upload' %}">
+        <button type="button">처방전 사진 찍기</button>
+    </a>
+    <a href="{% url 'pillinfo:pill_upload' %}">
+        <button type="button">알약 사진 찍기</button>
+    </a>
+    <a href="{% url 'pillinfo:pillinfo' %}">
+        <button type="button">알약 이름 검색</button>
+    </a>
+</form>

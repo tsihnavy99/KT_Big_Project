@@ -1,0 +1,43 @@
+<h1>알약 정보</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="pill_name" placeholder="알약 이름을 입력하세요">
+    <button type="submit">검색</button>
+</form>
+
+<h2>알약 정보 리스트:</h2>
+{% if pill_info_list %}
+    <ul>
+        {% for pill_info in pill_info_list %}
+            <li><strong>판별한 제품명:</strong> {{ pill_info.제품명A }}</li>
+            <li><strong>제품의 주성분:</strong> {{ pill_info.주성분 }}</li>
+            <li><strong>제품의 효능:</strong> {{ pill_info.효능 }}</li>
+            <li><strong>제품 사용법:</strong> {{ pill_info.사용법 }}</li>
+            <li><strong>제품 사용전 알아둬야할 점:</strong> {{ pill_info.사전지식 }}</li>
+            <li><strong>제품과 함께 먹을 때 주의해야할 음식:</strong> {{ pill_info.주의음식 }}</li>
+            <li><strong>제품의 부작용:</strong> {{ pill_info.이상반응 }}</li>
+            <li><strong>제품 보관방법:</strong> {{ pill_info.보관법 }}</li>
+            <hr>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>검색 결과가 없습니다.</p>
+{% endif %}
+
+<hr>
+
+<h2>복용 금지 약물 리스트</h2>
+{% if api_pill_info_list %}
+    <ul>
+        {% for poc_info in api_pill_info_list %}
+            <li><strong>제품명A:</strong> {{ poc_info.ITEM_NAME }}</li>
+            <li><strong>제품명B:</strong> {{ poc_info.MIXTURE_ITEM_NAME }}</li>
+            <li><strong>성분명B:</strong> {{ poc_info.INGR_ENG_NAME }}</li>
+            <li><strong>같이 섭취 시 부작용:</strong> {{ poc_info.PROHBT_CONTENT }}</li>
+            <hr>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>해당 알약에 대한 복용 금지 약물 정보가 없습니다.</p>
+{% endif %}

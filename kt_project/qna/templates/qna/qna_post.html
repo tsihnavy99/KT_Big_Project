@@ -1,0 +1,19 @@
+반갑습니다. 질문 목록입니다
+
+<hr>
+
+
+<ul>
+    {% for p in qna_posts %}
+        <li> {{p.user_info}} 의 {{ p.질문 }}이 있습니다. </li>
+        <br>
+        {% if p.user_img %}
+            <li><img src="{{p.user_img.url }}"> 가 있습니다. </li>
+        {% endif %}
+        <br>
+    {% endfor %}
+</ul>
+
+<hr>
+
+<a href="{% url 'qna:qna_update' %}">질문하러 가기</a>
