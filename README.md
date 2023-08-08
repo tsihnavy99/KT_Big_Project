@@ -34,6 +34,11 @@ ObjectDetection 경구약제 인식: 사용자가 경구약제를 찍으면 처�
 
 <br>
 
+## 시연 영상
+[시연 영상](https://clipchamp.com/watch/gZ0hZvqGMsC)
+
+<br>
+        
 ## 사용된 API
 - 네이버 OCR API
 - 복용금지 DUR 항목 API
