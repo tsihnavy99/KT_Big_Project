@@ -1,4 +1,4 @@
-# 약쏙
+# <img src="https://github.com/tsihnavy99/KT_Big_Project/assets/70021587/387ea725-c166-478d-b5b0-a6bafc9aa808" height="30">약쏙
 ### 만성질환 환자를 위한 의약품 오복용 방지 서비스
 #### 다제약물 복용자에게 병용금기 정보를 제공하고 약사와 소통창구를 제공해 보다 안전한 의약품 사용을 돕기 위한 서비스
 
@@ -13,9 +13,9 @@
 ## 메인 서비스
 ![image](https://github.com/tsihnavy99/KT_Big_Project/assets/70021587/7c17ca98-ecc5-49cd-98b5-75fde71fb9be)
 
-OCR을 통한 처방전 인식: OCR기술을 활용하여 처방전을 스캔하고 인식. 각 회원의 DB에 처방전 정보를 저장하여 중복 및 병용가능 안내 기준으로 사용.<br>
+OCR을 통한 처방전 인식: OCR기술을 활용하여 처방전을 스캔하고 인식. 각 회원의 DB에 처방전 정보를 저장하여 중복 및 병용가능 안내 기준으로 사용<br>
  
-ObjectDetection 경구약제 인식: 사용자가 경구약제를 찍으면 처방전을 기반으로 해당 의약품이 중복약제 인지 병용가능한 의약품인지 정보제공.
+Object Detection 경구약제 인식: 사용자가 경구약제를 찍으면 처방전을 기반으로 해당 의약품이 중복약제 인지 병용가능한 의약품인지 정보제공
 
 <br>
 
@@ -42,17 +42,17 @@ ObjectDetection 경구약제 인식: 사용자가 경구약제를 찍으면 처�
 ## 사용된 API
 - 네이버 OCR API
 - 복용금지 DUR 항목 API
-- 네이버 SENS API
+- 네이버 SENS API(SMS)
 - 네이버 오픈 API(검색-뉴스)
 
 <br><br>
 <hr>
 
 # 사용 환경설정
-Front-end: React native <br>
-Back-end: Django, Firebase <br>
-Database: SQLite <br>
-형상관리: Git hub, Slack <br>
+Front-end:  <img src="https://img.shields.io/badge/react native-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <br> 
+Back-end:  <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white"> <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"> <br>
+Database:  <img src="https://img.shields.io/badge/sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"> <br>
+형상관리:  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"> <br>
 
 <br><br>
 <hr>
